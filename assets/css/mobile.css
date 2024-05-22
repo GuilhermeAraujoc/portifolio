@@ -1,0 +1,107 @@
+@media (max-width: 1020px) {
+  .msg {
+    display: block;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    border-right: 1px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    margin-bottom: 5%;
+    animation: marcador 0.9s step-end infinite, write 9s steps(22, end) infinite;
+  }
+  .container {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .titulo {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: white;
+    border-right: 1px solid #ffffff;
+    white-space: nowrap;
+    width: 0;
+    overflow: hidden;
+    margin-bottom: 5%;
+    animation: marcador 0.9s step-end infinite, write 9s steps(22, end) infinite;
+  }
+  .bio {
+    font-size: 1.1rem !important;
+  }
+  .perfil {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+    color: rgba(255, 255, 255, 0.829);
+  }
+  .descricao {
+    font-size: large;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+
+  .perfil-imagem {
+    height: 10rem;
+    width: 10rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 5%;
+    margin-top: 0%;
+    transition: transform 0.5s ease;
+  }
+
+  .perfil-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: box-shadow 0.5s ease;
+  }
+
+  .container3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    font-size: 1.2rem;
+  }
+  .msg-habilidades,
+  .msg-projeto {
+    font-size: 2rem !important;
+  }
+
+  .img {
+    width: 150px;
+    height: 250px;
+    font-size: 1rem;
+  }
+  .img img {
+    width: 100px;
+    height: 125px;
+  }/*
+  .tempo-none {
+    display: none;
+  }*/
+  .titulo-linguagem {
+    margin-top: -60px;
+    color: #cbcbcb;
+    transition: color 0.5s ease;
+  }
+  .projetos {
+    height: 430px;
+  }
+  .p-img {
+    font-size: 2rem;
+    margin-bottom: 40px !important;
+  }
+}
