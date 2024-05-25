@@ -1,0 +1,125 @@
+.card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  margin: 20px;
+  background: rgb(66, 66, 66);
+  display: flex ;
+  flex-wrap: wrap;
+  align-items:center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.card a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card a h1{
+  font-size: 1.5rem;
+  margin-bottom:10% ;
+  color: white;
+}
+.card a p{
+  margin-top: 10%;
+  color: rgba(255, 255, 255, 0.397);
+}
+.card img{
+  overflow: hidden;
+  width: 95%;
+  border-radius:5px ;
+}
+#card-click{
+  display: none;
+}
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(64, 64, 64);
+  transition: all 0.5s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.card:hover::before,
+.card:hover::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+
+/* Estilos para o contêiner dos botões */
+.card .btn-container {
+  overflow: hidden;
+  z-index: 10000;
+  display: none; /* Inicialmente escondido */
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  color: white;
+}
+
+.card:hover .btn-container {
+  display: flex; /* Mostrar ao hover */
+  transition: all 0.5s;
+}
+
+.btn-container .buttons {
+  display: flex;
+  gap: 10px; /* Espaço entre os botões */
+  margin-bottom: 10px; /* Espaço abaixo dos botões */
+}
+
+.btn-container .buttons a {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  text-decoration: underline !important;
+}
+
+.btn-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.btn-container .images {
+  display: flex;
+  gap: 10px; /* Espaço entre as imagens */
+}
+
+.btn-container .images img {
+  width: 50px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  margin-top: -10px;
+  border-radius: 5px;
+}
