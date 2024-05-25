@@ -97,11 +97,10 @@
     color: #cbcbcb;
     transition: color 0.5s ease;
   }
-  .projetos {
-    height: 430px;
+  #card-click{
+    display: block !important;
   }
-  .p-img {
-    font-size: 2rem;
-    margin-bottom: 40px !important;
+  #card-mouse{
+    display: none !important;
   }
 }
